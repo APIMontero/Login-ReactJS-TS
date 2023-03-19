@@ -1,15 +1,19 @@
 import "./App.css";
+import { Cabecera } from "./components/cabecera/cabecera.component";
+import { Pie } from "./components/pie/pie.component";
+import { Principal } from "./components/principal/principal.component";
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <h1>Mi primera aplicación 👜 </h1>
-        <h2>React con TypeScript ‼ </h2>
-        <a href="https://www.google.cl/" className="App-link">
-          Ir a google 🇨🇱
-        </a>
-      </div>
+      <Cabecera />
+      <Principal />
+      <Pie
+        titulo="Este es un Footer"
+        editor="@david.montero.urrutia"
+        fecha="marzo de 2023"
+      />
+      {/* Antes de los textos arroja un signo de dollar. ¿Cómo lo corrijo? */}
     </div>
   );
 }
