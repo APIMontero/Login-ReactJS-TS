@@ -9,9 +9,6 @@ interface lineaFooter {
   fecha: string;
 }
 export let Pie = (props: lineaFooter) => {
-  //Test dark box ;)
-  //props:
-
   return (
     <>
       <div className="pie">
